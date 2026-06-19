@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>おすすめ焼酎診断</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="stylesheet" href="/static/taste_design.css">
+</head>
+<body class="taste">
+  <div class="container">
+    <h1 id="title">味わいの特徴を選んでください</h1>
+
+    <div class="question">
+      <label for="aroma">① 香り</label>
+      <input type="range" id="aroma" class="slider" min="1" max="5" value="3">
+      <div class="ticks">
+        <span>芳醇</span><span> </span><span> </span><span> </span><span>スッキリ</span>
+      </div>
+    </div>
+
+    <div class="question">
+      <label for="taste">② 味わい</label>
+      <input type="range" id="taste" class="slider" min="1" max="5" value="3">
+      <div class="ticks">
+        <span>濃厚</span><span> </span><span> </span><span> </span><span>さわやか</span>
+      </div>
+    </div>
+
+    <div class="question">
+      <label for="aftertaste">③ あと味</label>
+      <input type="range" id="aftertaste" class="slider" min="1" max="5" value="3">
+      <div class="ticks">
+        <span>コク</span><span> </span><span> </span><span> </span><span>淡麗</span>
+      </div>
+    </div>
+
+    <div class="question">
+      <label for="price">④ 値段</label>
+      <input type="range" id="price" class="slider" min="1" max="5" step="1" value="3">
+      <div class="ticks">
+        <span>安</span><span>やや安</span><span>中</span><span>やや高</span><span>高</span>
+      </div>
+    </div>
+
+    <button class="btn" onclick="showResult()">おすすめを診断する</button>
+    <button class="btn" onclick="goBack()">最初のページに戻る</button>
+
+    <div class="result" id="result"></div>
+  </div>
+
+  <script>
+    let drinks = [];
+
+    // URLから選んだ種類を取得
+    const params = new URLSearchParams(window.location.search);
+    const type = params.get("type");
+
+    if (type) {
+      document.getElementById("title").textContent = type + " の味わい診断";
+    }
+
+    // 価格スコア（安い→高いを1〜5で平準化）
+    function priceToScore(price) {
+      const p = Number(price);
+      if (p <= 1000) return 1;
+      if (p <= 2000) return 2;
+      if (p <= 3000) return 3;
+      if (p <= 4500) return 4;
+      return 5;
+    }
+
+    function priceLabel(score) {
+      if (score <= 1) return "安い";
+      if (score === 2) return "やや安い";
+      if (score === 3) return "ふつう";
+      if (score === 4) return "やや高い";
+      return "高い";
+    }
+
+    // JSONから銘柄データを読み込み
+    fetch('/static/drinks_data.json')
+      .then(res => res.json())
+      .then(data => {
+        drinks = data.map(d => ({
+          ...d,
+          price_score: d.price_score ?? priceToScore(d.price),
+          imageUrl: `/static/images/${d.image}`,
+          link: d.link || ''
+        }));
+      })
+      .catch(err => {
+        console.error('データ読み込みに失敗しました', err);
+      });
+
+    // 距離を計算して一番近い銘柄を出す
+    function showResult() {
+      if (!drinks.length) {
+        document.getElementById("result").textContent = "データ読み込み中です。少し待ってから再度お試しください。";
+        return;
+      }
+
+      const aroma = parseInt(document.getElementById("aroma").value);
+      const taste = parseInt(document.getElementById("taste").value);
+      const aftertaste = parseInt(document.getElementById("aftertaste").value);
+      const pricePref = parseInt(document.getElementById("price").value);
+
+      const userVector = [aroma, taste, aftertaste, pricePref];
+
+      const candidates = drinks.filter(d => d.type === type);
+
+      if (candidates.length === 0) {
+        document.getElementById("result").textContent = "選択された種類の焼酎は登録されていません。";
+        return;
+      }
+
+      let bestMatch = null;
+      let minDistance = Infinity;
+
+      candidates.forEach(d => {
+        const drinkVector = [d.aroma, d.flavor, d.aftertaste, d.price_score];
+        const distance = Math.sqrt(
+          Math.pow(drinkVector[0] - userVector[0], 2) +
+          Math.pow(drinkVector[1] - userVector[1], 2) +
+          Math.pow(drinkVector[2] - userVector[2], 2) +
+          Math.pow(drinkVector[3] - userVector[3], 2)
+        );
+        if (distance < minDistance) {
+          minDistance = distance;
+          bestMatch = d;
+        }
+      });
+
+      if (!bestMatch) {
+        document.getElementById("result").textContent = "おすすめを算出できませんでした。";
+        return;
+      }
+
+      const hasLink = bestMatch.link && bestMatch.link.startsWith('http');
+      const linkMarkup = hasLink
+        ? `<a class="result-link-button" href="${bestMatch.link}" target="_blank" rel="noopener">商品ページを見る</a>`
+        : `<span class="result-link-button disabled">リンク準備中</span>`;
+
+      document.getElementById("result").innerHTML = `
+        <div class="result-image-container">
+          <img src="${bestMatch.imageUrl}" alt="${bestMatch.name}" class="result-image">
+        </div>
+        <div class="result-info">
+          <div class="result-name">${bestMatch.name}</div>
+          
+          <div class="result-params">
+            <h3>選択したパラメータ</h3>
+            <div class="param-item">
+              <span class="param-label">香りの強さ</span>
+              <span class="param-value">${aroma} / 5</span>
+            </div>
+            <div class="param-item">
+              <span class="param-label">味わいの濃さ</span>
+              <span class="param-value">${taste} / 5</span>
+            </div>
+            <div class="param-item">
+              <span class="param-label">あと味の余韻</span>
+              <span class="param-value">${aftertaste} / 5</span>
+            </div>
+            <div class="param-item">
+              <span class="param-label">値段</span>
+              <span class="param-value">${pricePref} / 5</span>
+            </div>
+          </div>
+
+          <div class="result-details">
+            <div class="detail-item">
+              <span class="detail-label">種類</span>
+              <span class="detail-value">${bestMatch.type}</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">価格</span>
+              <span class="detail-value">${bestMatch.price.toLocaleString()}円</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">容量</span>
+              <span class="detail-value">${bestMatch.volume_ml}ml</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">アルコール度数</span>
+              <span class="detail-value">${bestMatch.abv}%</span>
+            </div>
+          </div>
+
+          ${linkMarkup}
+        </div>
+      `;
+
+      setTimeout(() => {
+        document.getElementById("result").scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }, 100);
+    }
+
+    // 戻るボタン
+    function goBack() {
+      window.location.href = "/select";
+    }
+  </script>
+</body>
+</html>
