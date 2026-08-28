@@ -9,13 +9,13 @@ body {
   font-family: "Hiragino Sans", "Meiryo", sans-serif;
   margin: 0;
   padding: 20px;
-  background-color: #800000 ;
+  background-color: #800000;
   color: #333;
 }
 
 body:not(.index):not(.taste):not(.osake) {
   font-family: "Hiragino Mincho ProN", serif;
-  background-color: #faf7f2;
+  background-color: #800000;
   color: #333;
 }
 
@@ -30,7 +30,7 @@ label {
 
 /* ===== home.html用 ===== */
 .hero {
-  background: #3b1f0f;
+  background: #800000;
   color: #fff;
   padding: 80px 0;
   text-align: center;
@@ -52,7 +52,7 @@ label {
   display: inline-block;
   margin-top: 30px;
   padding: 15px 30px;
-  background: #b38a4a;
+  background: #800000;
   color: #fff;
   text-decoration: none;
   font-weight: bold;
@@ -79,7 +79,7 @@ h2 {
 }
 
 .flow-step {
-  background: #fff;
+  background: #800000;
   padding: 20px;
   margin-bottom: 20px;
   border-radius: 8px;
@@ -87,13 +87,13 @@ h2 {
 
 .example {
   margin-top: 10px;
-  background: #f3ede5;
+  background: #800000;
   padding: 10px;
   font-size: 0.9em;
 }
 
 footer {
-  background: #3b1f0f;
+  background: #800000;
   color: #fff;
   text-align: center;
   padding: 20px;
@@ -109,7 +109,7 @@ footer {
 
 /* ===== index.html用 ===== */
 body.index {
-  background-color: #faf7f2;
+  background-color: #800000;
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -118,7 +118,7 @@ body.index {
 }
 
 .index .container {
-  background: #fff;
+  background: #800000;
   border: 1px solid #e0d7cc;
   border-radius: 20px;
   padding: 40px 30px;
@@ -139,7 +139,7 @@ body.index {
   width: 100%;
   padding: 15px;
   margin: 15px 0;
-  background: #fff;
+  background: #800000;
   border: 2px solid #ddd;
   border-radius: 12px;
   font-size: 1.1em;
@@ -151,13 +151,13 @@ body.index {
 
 .choice-btn:hover {
   border-color: #b38a4a;
-  background: #faf7f2;
+  background: #800000;
   box-shadow: 0 2px 8px rgba(179, 138, 74, 0.3);
 }
 
 /* ===== taste.html用 ===== */
 body.taste {
-  background-color: #faf7f2;
+  background-color: #800000;
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -165,7 +165,7 @@ body.taste {
 }
 
 .taste .container {
-  background: #fff;
+  background: #800000;
   border: 1px solid #e0d7cc;
   border-radius: 20px;
   padding: 30px 25px;
@@ -222,7 +222,7 @@ body.taste {
   width: 100%;
   padding: 14px;
   margin: 18px 0 8px;
-  background: #fff;
+  background: #800000;
   border: 2px solid #ddd;
   border-radius: 12px;
   font-size: 1.05em;
@@ -234,7 +234,7 @@ body.taste {
 
 .btn:hover {
   border-color: #b38a4a;
-  background: #faf7f2;
+  background: #800000;
   box-shadow: 0 2px 8px rgba(179, 138, 74, 0.3);
 }
 
@@ -243,7 +243,7 @@ body.taste {
 }
 
 .result-card {
-  background: #faf7f2;
+  background: #800000;
   border: 1px solid #e0d7cc;
   border-radius: 14px;
   padding: 16px;
@@ -295,7 +295,7 @@ body.taste {
   max-width: 100%;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
-  background: #fff;
+  background: #800000;
 }
 
 .result-link-wrap {
@@ -308,7 +308,7 @@ body.taste {
   padding: 8px 12px;
   border: 1px solid #b38a4a;
   border-radius: 10px;
-  background: #ffffff;
+  background: #800000;
   color: #7a3e1d;
   text-decoration: none;
   font-size: 0.9em;
@@ -316,14 +316,14 @@ body.taste {
 }
 
 .result-link:hover {
-  background: #faf7f2;
+  background: #800000;
   box-shadow: 0 2px 6px rgba(179, 138, 74, 0.25);
 }
 
 .result-link.disabled {
   border-color: #dddddd;
   color: #aaaaaa;
-  background: #f7f7f7;
+  background: #800000;
   box-shadow: none;
   cursor: default;
   pointer-events: none;
@@ -386,7 +386,7 @@ body.taste {
 
 /* ===== osake.html用 ===== */
 body.osake {
-  background: #f9f9f9;
+  background: #800000;
 }
 
 .osake h1 {
@@ -396,7 +396,7 @@ body.osake {
 .section {
   margin-bottom: 30px;
   padding: 20px;
-  background: #fff;
+  background: #800000;
   border-radius: 12px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
@@ -406,7 +406,7 @@ body.osake {
 }
 
 .osake .result {
-  background: #e6ffe6;
+  background: #800000;
   border: 2px solid #66bb6a;
   font-size: 1.2em;
 }
