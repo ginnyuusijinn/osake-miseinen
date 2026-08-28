@@ -9,7 +9,7 @@ body {
   font-family: "Hiragino Sans", "Meiryo", sans-serif;
   margin: 0;
   padding: 20px;
-  background-color: #800000;
+  background-color: #800000 !important;
   color: #333;
 }
 
