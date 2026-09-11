@@ -410,3 +410,40 @@ body.osake {
   border: 2px solid #66bb6a;
   font-size: 1.2em;
 }
+
+/* スマホ向け設定 */
+@media screen and (max-width: 768px) {
+
+  /* 1. 文字サイズの調整 */
+  h1 {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+
+  p, body {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .btn, a.button {
+    font-size: 16px;
+    padding: 12px 20px;
+  }
+
+  /* 2. レイアウトの調整（はみ出し防止） */
+  .container, .section {
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+}
