@@ -30,7 +30,7 @@ label {
 
 /* ===== home.html用 ===== */
 .hero {
-  background: #3b1f0f;
+  background: #3cb371; /* ← 13行目：この色コードを変更すればトップページの上側の色が変わる */
   color: #fff;
   padding: 80px 0;
   text-align: center;
