@@ -30,21 +30,18 @@ label {
 
 /* ===== home.html用 ===== */
 .hero {
-.bg_pattern {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: #fffff;
-  opacity: 0.4;
-  z-index: -1;
-}
-.Polka_v2 {
-  background-image:  radial-gradient(#ffc107 2px, transparent 2px), radial-gradient(#ffc107 2px, #ffffff 2px);
+  /* 背景をドット柄に指定 */
+  background-color: #ffb6c1; /* 基本の背景色（ピンク） */
+  background-image: 
+    radial-gradient(#ffc107 2px, transparent 2px), 
+    radial-gradient(#ffc107 2px, #ffffff 2px);
   background-size: 40px 40px;
-  background-position: 0 0,20px 20px;
-}
+  background-position: 0 0, 20px 20px;
+
+  color: #fff;
+  padding: 80px 0;
+  text-align: center;
+  margin: -20px -20px 0 -20px;
 }
 
 .hero h1 {
