@@ -52,7 +52,7 @@ label {
   display: inline-block;
   margin-top: 30px;
   padding: 15px 30px;
-  background: #b38a4a;
+  background: #b38a4a; /* ← ここで「診断をはじめる」のボタンの色を変更します */
   color: #fff;
   text-decoration: none;
   font-weight: bold;
