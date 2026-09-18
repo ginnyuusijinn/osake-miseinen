@@ -39,12 +39,12 @@ label {
 
 .hero h1 {
   font-size: 2em;
-  margin-bottom: 20px;
+  margin-bottom: 25px; /* ← ここを変更するとトップページの「あなたに合った～見つけませんか」の部分の文字の大きさを変えられる　元20 */
   color: #fff;
 }
 
 .hero p {
-  font-size: 1em;
+  font-size: 5em;　/* ← ここを変更するとトップページの「簡単な質問に答えるだけで～」の部分の文字の大きさを変えられる　元1 */
   line-height: 1.8;
 }
 
