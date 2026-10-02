@@ -60,17 +60,17 @@ name,type,image,abv,volume_ml,container,price,aroma,flavor,aftertaste,price_scor
 貴醸酎 神武,麦焼酎,jinmu_kijoutyu_720.jpg,40,720,瓶,5500,1,1,2,5,https://shochu-dojo.jp/?pid=158061908
 神武 麦全麹仕込十年貯蔵原酒,麦焼酎,jinmu_mugi_720.jpg,39,720,瓶,5940,3,1,3,5,https://shochu-dojo.jp/?pid=158061910
 焼酎力 麦,麦焼酎,shochuriki_mugi_1800.jpg,25,1800,紙パック,2011,5,4,4,3,https://shochu-dojo.jp/?pid=173344335
-どでか麦,麦焼酎,dodeka_mugi_5500.jpg,25,5500,大容量PET,4598,3,4,3,5,https://shochu-dojo.jp/?pid=170643890
-孤独な天使,デーツ焼酎,kodokunatenshi_720.jpg,36,720,瓶,2750,2,1,3,3,https://shochu-dojo.jp/?pid=158061916
-日向の夏子,リキュール,himukanonatsuko_500.jpg,12,500,瓶,1257,4,4,3,2,https://shochu-dojo.jp/?pid=158061917
-日向の夏子,リキュール,himukanonatsuko_1800.jpg,12,1800,瓶,2310,4,4,3,3,https://shochu-dojo.jp/?pid=158061919
-さわやか へべすリキュール,リキュール,liqueur_hebesu_500.jpg,14,500,瓶,1562,4,3,4,2,https://shochu-dojo.jp/?pid=158061923
-さわやか レモンリキュール,リキュール,liqueur_lemon_500.jpg,14,500,瓶,1425,5,5,4,2,https://shochu-dojo.jp/?pid=158061924
-さわやか レモンリキュール,リキュール,liqueur_lemon_1800.jpg,14,1800,瓶,3300,5,5,4,4,https://shochu-dojo.jp/?pid=158061925
-さわやか ゆずリキュール,リキュール,liqueur_yuzu._500/jpg,14,500,瓶,1425,5,4,4,2,https://shochu-dojo.jp/?pid=158061922
-爽 飫肥杉,芋焼酎,obisugi_20_900.jpg,20,900,スリムカップ,952,5,5,5,1,
-赤飫肥杉,芋焼酎,akasugi_25_900.jpg,25,900,スリムカップ,980,3,4,4,1,
-爽 飫肥杉,芋焼酎,obisugi_20_100.jpg,20,100,,223,5,5,5,1,https://shochu-dojo.jp/?pid=158061833
+どでか麦,麦焼酎,dodeka_mugi_5000.jpg,25,5000,大容量PET,4870,3,4,3,5,https://shochu-dojo.jp/?pid=170643890
+孤独な天使,デーツ焼酎,kodokunatenshi_720.jpg,36,720,瓶,2970,2,1,3,3,https://shochu-dojo.jp/?pid=158061916
+日向の夏子,リキュール,himukanonatsuko_500.jpg,12,500,瓶,1380,4,4,3,2,https://shochu-dojo.jp/?pid=158061917
+日向の夏子,リキュール,himukanonatsuko_1800.jpg,12,1800,瓶,2500,4,4,3,3,https://shochu-dojo.jp/?pid=158061919
+さわやか へべすリキュール,リキュール,liqueur_hebesu_500.jpg,14,500,瓶,2020,4,3,4,2,https://shochu-dojo.jp/?pid=158061923
+さわやか レモンリキュール,リキュール,liqueur_lemon_500.jpg,14,500,瓶,1760,5,5,4,2,https://shochu-dojo.jp/?pid=158061924
+さわやか レモンリキュール,リキュール,liqueur_lemon_1800.jpg,14,1800,瓶,3960,5,5,4,4,https://shochu-dojo.jp/?pid=158061925
+さわやか ゆずリキュール,リキュール,liqueur_yuzu._500/jpg,14,500,瓶,2020,5,4,4,2,https://shochu-dojo.jp/?pid=158061922
+爽 飫肥杉,芋焼酎,obisugi_20_900.jpg,20,900,スリムカップ,952,5,5,5,1,商品ページなし
+赤飫肥杉,芋焼酎,akasugi_25_900.jpg,25,900,スリムカップ,980,3,4,4,1,商品ページなし
+爽 飫肥杉,芋焼酎,obisugi_20_100.jpg,20,100,,223,5,5,5,1,取り扱いなし
 むげつ まるみ,芋焼酎,mugetsu_marumi_720.jpg,25,720,,1518,2,2,3,2,https://shochu-dojo.jp/?pid=163010728
 むげつ まるみ,芋焼酎,mugetsu_marumi_1800.jpg,25,1800,,2530,2,2,3,3,https://shochu-dojo.jp/?pid=163010688
 むげつ まるみ 長期甕熟成,芋焼酎,mugetsu_marumi-long_720.jpg,25,720,,1518,,2,2,3,2,https://shochu-dojo.jp/?pid=182746662
@@ -85,7 +85,7 @@ name,type,image,abv,volume_ml,container,price,aroma,flavor,aftertaste,price_scor
 赤魔王,芋焼酎,akamaou_720.jpg,25,720,,1859,2,2,3,2,https://shochu-dojo.jp/?pid=158061966
 赤魔王,芋焼酎,akamaou_1800.jpg,25,1800,,3003,2,2,3,4,https://shochu-dojo.jp/?pid=158061967
 赤魔王 紫芋仕込,芋焼酎,akamaou_murasaki_100.jpg,25,100,,301,3,3,3,1,https://shochu-dojo.jp/?pid=166738944
-赤魔王 紫芋仕込,芋焼酎,akamaou_murasaki_720.jpg,25,720,,1518,3,3,3,2,https://shochu-dojo.jp/?pid=166738757
+赤魔王 紫芋仕込,芋焼酎,akamaou_murasaki_720.jpg,25,720,,1518,3,3,3,2,取り扱いなし
 赤魔王 紫芋仕込,芋焼酎,akamaou_murasaki_720.jpg,25,720,,1628,3,3,3,2,https://shochu-dojo.jp/?pid=166738897
 赤魔王 紫芋仕込,芋焼酎,akamaou_murasaki_1800.jpg,25,1800,,2728,3,3,3,3,https://shochu-dojo.jp/?pid=166738054
 吉祥赤魔王,芋焼酎,kisshou_akamaou_720.jpg,27,720,,3102,2,1,4,4,https://shochu-dojo.jp/?pid=158061969
@@ -98,10 +98,10 @@ name,type,image,abv,volume_ml,container,price,aroma,flavor,aftertaste,price_scor
 やき芋浪漫,芋焼酎,yakiimoroman_100.jpg,25,100,,301,,,,1,商品ページがない
 やき芋浪漫,芋焼酎,yakiimoroman_900.jpg,25,900,,1485,,,,2,商品ページがない
 やき芋浪漫,芋焼酎,yakiimoroman_1800.jpg,25,1800,,2832,,,,3,商品ページがない
-蔵の文太 白麹,芋焼酎,kuranobunta_shiro_720.jpg,25,720,瓶,1320,4,3,4,2,https://shochu-dojo.jp/?pid=158061953
-蔵の文太 白麹,芋焼酎,kuranobunta_shiro_1800.jpg,25,1800,瓶,2046,4,3,4,3,https://shochu-dojo.jp/?pid=158061954
-蔵の文太 黒麹,芋焼酎,kuranobunta_kuro_720.jpg,25,720,瓶,1320,2,3,2,2,https://shochu-dojo.jp/?pid=158061955
-蔵の文太 黒麹,芋焼酎,kuranobunta_kuro_1800.jpg,25,1800,瓶,2046,2,3,2,3,https://shochu-dojo.jp/?pid=158061956
+蔵の文太 白麹,芋焼酎,kuranobunta_shiro_720.jpg,25,720,瓶,1320,4,3,4,2,取り扱いなし
+蔵の文太 白麹,芋焼酎,kuranobunta_shiro_1800.jpg,25,1800,瓶,2046,4,3,4,3,取り扱いなし
+蔵の文太 黒麹,芋焼酎,kuranobunta_kuro_720.jpg,25,720,瓶,1320,2,3,2,2,取り扱いなし
+蔵の文太 黒麹,芋焼酎,kuranobunta_kuro_1800.jpg,25,1800,瓶,2046,2,3,2,3,取り扱いなし
 花立の里,芋焼酎,hanadatenosatoi_720.jpg,25,720,,1540,,,,2,商品ページがない
 花立の里,芋焼酎,hanadatenosatoi_1800.jpg,25,1800,,2639,,,,3,商品ページがない
 日南発,芋焼酎,hinata_900.jpg,25,900,,1446,,,,2,商品ページがない
@@ -110,13 +110,13 @@ name,type,image,abv,volume_ml,container,price,aroma,flavor,aftertaste,price_scor
 芋の喜,芋焼酎,imonoyorokobi_1800.jpg,25,1800,紙パック,2194,3,3,3,3,https://shochu-dojo.jp/?pid=158061958
 テーナー芋,芋焼酎,imo_cubitainer_18000.jpg,25,18000,,14850,3,3,3,5,https://shochu-dojo.jp/?pid=158061974
 赤魔王 麦 八年古酒,麦焼酎,akamaou_mugi8_100.jpg,25,100,瓶,301,5,4,4,1,https://shochu-dojo.jp/?pid=158061976
-赤魔王 麦 八年古酒,麦焼酎,akamaou_mugi8_720.jpg,25,720,瓶,720,5,4,4,1,https://shochu-dojo.jp/?pid=158061977
-赤魔王 麦 八年古酒,麦焼酎,akamaou_mugi8_1800.jpg,25,1800,瓶,1800,5,4,4,2,https://shochu-dojo.jp/?pid=158061978
+赤魔王 麦 八年古酒,麦焼酎,akamaou_mugi8_720.jpg,25,720,瓶,1515,5,4,4,1,https://shochu-dojo.jp/?pid=158061977
+赤魔王 麦 八年古酒,麦焼酎,akamaou_mugi8_1800.jpg,25,1800,瓶,2640,5,4,4,2,https://shochu-dojo.jp/?pid=158061978
 長期甕貯蔵 無月 華,麦焼酎,mugetsu-hana_720.jpg,40,720,瓶,3300,3,2,2,4,https://shochu-dojo.jp/?pid=158061975
 長期甕貯蔵 無月 極,その他,mugetsu_kiwami_720.jpg,40,720,瓶,3300,2,1,1,4,https://shochu-dojo.jp/?pid=158061982
 テーナー麦,麦焼酎,junmugi_cubitainer_18000.jpg,25,18000,,13750,3,3,3,5,https://shochu-dojo.jp/?pid=158061980
 しあわせ いちごリキュール,リキュール,ichigo_500.jpg,14,500,,1970,,,,2,商品ページがない
-さわやか健美梅酒,リキュール,sawayaka_umeshu_300.jpg,5,300,瓶,467,5,5,5,1,https://shochu-dojo.jp/?pid=158061988
+さわやか健美梅酒,リキュール,sawayaka_umeshu_300.jpg,5,300,瓶,572,5,5,5,1,https://shochu-dojo.jp/?pid=158061988
 体にうれしい梅酒,リキュール,karadaniureshii_umeshu_720.jpg,14,720,瓶,1485,2,2,3,2,https://shochu-dojo.jp/?pid=158061987
 さわやか健美梅酒 -GOLD-,リキュール,umeshu_gold_500.jpg,14,500,,1410,,,,2,商品ページがない
 さわやか健美梅酒-PREMIUM-,リキュール,umeshu_premium_500.jpg,14,500,,1254,,,,2,商品ページがない
