@@ -53,6 +53,7 @@ label {
 .hero p {
   font-size: 2em;　/* ← ここを変更するとトップページの「簡単な質問に答えるだけで～」の部分の文字の大きさを変えられる　元1 */
   line-height: 1.8;
+  color: #333333;
 }
 
 .start-button {
