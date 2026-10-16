@@ -89,7 +89,8 @@ h2 {
   padding: 20px;
   margin-bottom: 20px;
   border-radius: 8px;
-  border: 2px solid #8b4513;
+  border: 2px solid #8b4513; /*「診断の流れ」の1から4までの枠の縁取り*/
+  text-align: center; /* ← この行を追加して中央揃え */
 }
 
 .example {
