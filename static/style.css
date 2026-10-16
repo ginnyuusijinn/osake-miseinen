@@ -9,7 +9,7 @@ body {
   font-family: "Hiragino Sans", "Meiryo", sans-serif;
   margin: 0;
   padding: 20px;
-  background-color: #efefef; /*ここで元々ベージュだった下の部分の背景が変わる */
+  background-color: #faf7f2; /*ここで元々ベージュだった下の部分の背景が変わる */
   color: #333;
 }
 
@@ -115,7 +115,7 @@ footer {
 
 /* ===== index.html用 ===== */
 body.index {
-  background-color: #faf7f2;
+  background-color: #faf7f2; /*ここで「どの種類のお酒が気になりますか?」の背景色を変えられる*/
   min-height: 100vh;
   display: flex;
   justify-content: center;
