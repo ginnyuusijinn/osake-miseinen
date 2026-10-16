@@ -101,7 +101,7 @@ h2 {
 }
 
 footer {
-  background: #3b1f0f;
+  background: #3b1f0f; /*ここで「© 井上酒造・櫻の郷酒造」のラベルの色を変えられる*/
   color: #fff;
   text-align: center;
   padding: 20px;
