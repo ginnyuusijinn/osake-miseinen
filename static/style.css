@@ -82,6 +82,7 @@ h2 {
   border-left: 5px solid #8b4513; /*ここ変えると「このサイトについて」「診断の流れ」の左側の色が変えられる */
   padding-left: 10px;
   margin-bottom: 20px;
+  font-size: 3em; /* ここで「このサイトについて」「診断の流れ」の文字の大きさを変えられる（標準は2em程度） */
 }
 
 .flow-step {
