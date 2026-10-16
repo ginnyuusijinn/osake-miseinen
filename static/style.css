@@ -11,7 +11,6 @@ body {
   padding: 20px;
   background-color: #fffaf0; /*ここで元々ベージュだった下の部分の背景が変わる */
   color: #333;
-  font-size: 20px; /* ← ここでお好みの文字サイズを変更する */
 }
 
 body:not(.index):not(.taste):not(.osake) {
@@ -77,6 +76,13 @@ main {
 
 section {
   margin-bottom: 60px;
+}
+
+/* ↓ ここに追加します ↓ */
+.about-text {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 40px;
 }
 
 h2 {
