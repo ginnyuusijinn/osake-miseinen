@@ -439,43 +439,72 @@ body.osake {
   font-size: 1.2em;
 }
 
-/* スマホ向け設定 */
+/* ==========================================
+   スマホ向けレイアウト設定（画面幅 768px 以下）
+   ========================================== */
 @media screen and (max-width: 768px) {
 
-  /* 1. 文字サイズの調整 */
-  h1 {
-    font-size: 16px;
+  /* 1. 全体・外枠の余白調整（画面からはみ出るのを防止） */
+  body {
+    padding: 10px;
+  }
+  
+  main {
+    padding: 20px 10px;
+  }
+
+  /* 2. トップ画像（緑のエリア）の調整 */
+  .hero {
+    padding: 40px 15px;
+    margin: -10px -10px 0 -10px;
+  }
+  .hero h1 {
+    font-size: 1.6rem !important; /* スマホ用メインタイトル */
     line-height: 1.4;
   }
-
-  h2 {
-    font-size: 16px;
+  .hero p {
+    font-size: 1.0rem !important; /* スマホ用サブテキスト */
+    line-height: 1.6;
   }
 
+  /* 3. 見出し（「このサイトについて」「診断の流れ」など） */
+  h2 {
+    font-size: 1.3rem !important;
+    margin-bottom: 15px;
+  }
+
+  /* 4. 本文・説明文のサイズ調整 */
   p, body {
-    font-size: 12px;
+    font-size: 0.95rem; /* 基本の文字サイズ（約15px） */
     line-height: 1.6;
   }
 
   .about-text {
-    font-size: 16px; /* ← スマホで表示したい文字サイズを指定*/
+    font-size: 1.0rem !important; /* 「このサイトについて」直下の文字 */
+    margin-bottom: 25px;
   }
 
-  .btn, a.button {
-    font-size: 16px;
-    padding: 12px 20px;
-  }
-
-  /* 2. レイアウトの調整（はみ出し防止） */
-  .container, .section {
-    width: 100%;
+  /* 5. 診断の流れ（①〜④のカード） */
+  .flow-step {
     padding: 15px;
-    box-sizing: border-box;
+    margin-bottom: 15px;
+  }
+  .flow-step h3 {
+    font-size: 1.1rem !important; /* ステップのタイトル */
   }
 
+  /* 6. ボタンのサイズ調整 */
+  .start-button, .btn, a.button {
+    display: block;
+    width: 100%; /* ボタンをスマホ幅いっぱいに広げて押しやすくする */
+    padding: 14px 0;
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  /* 7. 画像のサイズ調整 */
   img {
     max-width: 100%;
     height: auto;
   }
-
 }
