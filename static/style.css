@@ -79,7 +79,7 @@ section {
 }
 
 h2 {
-  border-left: 5px solid #3cb371; /*ここ変えると「このサイトについて」「診断の流れ」の左側の色が変えられる */
+  border-left: 5px solid #8b4513; /*ここ変えると「このサイトについて」「診断の流れ」の左側の色が変えられる */
   padding-left: 10px;
   margin-bottom: 20px;
 }
