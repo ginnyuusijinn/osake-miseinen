@@ -94,6 +94,11 @@ h2 {
   text-align: center; /* ← この行を追加して中央揃え */
 }
 
+/* ↓ ここから追加 ↓ */
+.flow-step h3 {
+  font-size: 1.5rem; /* ← ここでお好みの大きさに調整できます */
+}
+
 .example {
   margin-top: 10px;
   background: #f3ede5;
