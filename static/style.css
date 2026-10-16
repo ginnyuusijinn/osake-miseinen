@@ -444,7 +444,7 @@ body.osake {
 
   /* 1. 文字サイズの調整 */
   h1 {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.4;
   }
 
@@ -453,8 +453,12 @@ body.osake {
   }
 
   p, body {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.6;
+  }
+
+  .about-text {
+    font-size: 16px; /* ← スマホで表示したい文字サイズを指定*/
   }
 
   .btn, a.button {
