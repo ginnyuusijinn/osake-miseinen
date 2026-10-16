@@ -30,15 +30,18 @@ label {
 
 /* ===== home.html用 ===== */
 .hero {
-  /* 背景をドット柄に指定 */
-  background-color: #ffb6c1; /* 基本の背景色（ピンク） */
+  /* 三角巾模様（鱗文様） */
   background-image: 
-    radial-gradient(#ffc107 2px, transparent 2px), 
-    radial-gradient(#ffc107 2px, #ffffff 2px);
-  background-size: 40px 40px;
-  background-position: 0 0, 20px 20px;
-
-  color: #fff;
+    linear-gradient(115deg, transparent 50%, #ffcccc 50%),
+    linear-gradient(245deg, transparent 50%, #ffcccc 50%),
+    linear-gradient(115deg, #ffcccc 50%, transparent 50%),
+    linear-gradient(245deg, #ffcccc 50%, transparent 50%);
+  background-size: 50px 43.3px;
+  background-position: 0 0, 0 0, 25px 21.65px, 25px 21.65px;
+  background-color: #ffffff; /* ベース（背景）の色 */
+  
+  /* 元のレイアウト設定 */
+  color: #333;
   padding: 80px 0;
   text-align: center;
   margin: -20px -20px 0 -20px;
