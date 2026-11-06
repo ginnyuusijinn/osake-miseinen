@@ -6,20 +6,24 @@
   <title>容量の選択 - おすすめ焼酎診断</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
-<body>
-  <div class="card-container">
-    <h2>どの容量（サイズ）をご希望ですか？</h2>
+<body style="background-color: #fdfbf7; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; padding: 20px; box-sizing: border-box;">
+  
+  <div style="background: #ffffff; padding: 40px 30px; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); width: 100%; max-width: 480px; text-align: center; box-sizing: border-box;">
     
-    <div class="choices">
+    <h2 style="font-size: 1.4rem; color: #333; margin-bottom: 30px; font-weight: bold;">どの容量（サイズ）をご希望ですか？</h2>
+    
+    <div style="display: flex; flex-direction: column; gap: 15px;">
       <a class="choice-btn" href="{{ url_for('taste', type=drink_type, volume='100') }}">100ml〜360ml（お試し・カップ）</a>
       <a class="choice-btn" href="{{ url_for('taste', type=drink_type, volume='720') }}">500ml〜900ml（四合瓶 / スリムパック）</a>
       <a class="choice-btn" href="{{ url_for('taste', type=drink_type, volume='1800') }}">1800ml（一升瓶 / 紙パック）</a>
       <a class="choice-btn" href="{{ url_for('taste', type=drink_type, volume='any') }}">こだわらない / すべて</a>
     </div>
 
-    <div style="margin-top: 20px; text-align: center;">
-      <a href="{{ url_for('select') }}" style="color: #666; text-decoration: underline; font-size: 0.9rem;">← 種類選択に戻る</a>
+    <div style="margin-top: 30px;">
+      <a href="{{ url_for('select') }}" style="color: #888; text-decoration: underline; font-size: 0.85rem;">← 種類選択に戻る</a>
     </div>
+
   </div>
+
 </body>
 </html>
