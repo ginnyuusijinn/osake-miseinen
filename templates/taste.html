@@ -55,6 +55,7 @@
     // URLから選んだ種類を取得
     const params = new URLSearchParams(window.location.search);
     const type = params.get("type");
+    const volume = params.get("volume");
 
     if (type) {
       document.getElementById("title").textContent = type + " の味わい診断";
@@ -107,7 +108,22 @@
 
       const userVector = [aroma, taste, aftertaste, pricePref];
 
-      const candidates = drinks.filter(d => d.type === type);
+      // 種類と容量で絞り込み
+    let candidates = drinks;
+
+    if (type) {
+      candidates = candidates.filter(d => d.type === type || d.種類 === type);
+    }
+
+    if (volume && volume !== 'any') {
+      if (volume === '100') {
+        candidates = candidates.filter(d => Number(d.volume_ml || d.容量_ml || 0) <= 360);
+      } else if (volume === '720') {
+        candidates = candidates.filter(d => Number(d.volume_ml || d.容量_ml || 0) >= 500 && Number(d.volume_ml || d.容量_ml || 0) <= 900);
+      } else if (volume === '1800') {
+        candidates = candidates.filter(d => Number(d.volume_ml || d.容量_ml || 0) >= 1800);
+      }
+    }
 
       if (candidates.length === 0) {
         document.getElementById("result").textContent = "選択された種類の焼酎は登録されていません。";
