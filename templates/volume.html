@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>容量の選択 - おすすめ焼酎診断</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h2>ご希望の容量（サイズ）を選んでください</h2>
+    
+    <div class="options">
+      <!-- 選択された種類 (type) を引き継ぎつつ、容量 (volume) を指定して味わい選択へ送る -->
+      <a href="{{ url_for('taste', type=selected_type, volume='100') }}" class="option-card">
+        100ml〜300ml（お試し・カップ）
+      </a>
+      <a href="{{ url_for('taste', type=selected_type, volume='720') }}" class="option-card">
+        500ml〜900ml（四合瓶 / スリムパックなど）
+      </a>
+      <a href="{{ url_for('taste', type=selected_type, volume='1800') }}" class="option-card">
+        1800ml（一升瓶 / 紙パック）
+      </a>
+      <a href="{{ url_for('taste', type=selected_type, volume='any') }}" class="option-card">
+        こだわらない / すべて
+      </a>
+    </div>
+
+    <div style="margin-top: 25px; text-align: center;">
+      <a href="{{ url_for('select_type') }}" class="btn-back">← 種類選択に戻る</a>
+    </div>
+  </div>
+</body>
+</html>
