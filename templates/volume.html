@@ -10,24 +10,23 @@
   <div class="container">
     <h2>ご希望の容量（サイズ）を選んでください</h2>
     
-    <div class="options">
-      <!-- 選択された種類 (type) を引き継ぎつつ、容量 (volume) を指定して味わい選択へ送る -->
-      <a href="{{ url_for('taste', type=selected_type, volume='100') }}" class="option-card">
-        100ml〜300ml（お試し・カップ）
+    <div class="options" style="display: flex; flex-direction: column; gap: 15px; margin-top: 20px;">
+      <a href="{{ url_for('taste', type=drink_type, volume='100') }}" class="choice-btn">
+        100ml〜360ml（お試し・カップ）
       </a>
-      <a href="{{ url_for('taste', type=selected_type, volume='720') }}" class="option-card">
-        500ml〜900ml（四合瓶 / スリムパックなど）
+      <a href="{{ url_for('taste', type=drink_type, volume='720') }}" class="choice-btn">
+        500ml〜900ml（四合瓶 / スリムパック）
       </a>
-      <a href="{{ url_for('taste', type=selected_type, volume='1800') }}" class="option-card">
+      <a href="{{ url_for('taste', type=drink_type, volume='1800') }}" class="choice-btn">
         1800ml（一升瓶 / 紙パック）
       </a>
-      <a href="{{ url_for('taste', type=selected_type, volume='any') }}" class="option-card">
+      <a href="{{ url_for('taste', type=drink_type, volume='any') }}" class="choice-btn">
         こだわらない / すべて
       </a>
     </div>
 
     <div style="margin-top: 25px; text-align: center;">
-      <a href="{{ url_for('select_type') }}" class="btn-back">← 種類選択に戻る</a>
+      <a href="{{ url_for('select') }}" class="btn-back">← 種類選択に戻る</a>
     </div>
   </div>
 </body>
