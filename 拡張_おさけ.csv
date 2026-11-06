@@ -80,14 +80,8 @@ name,type,image,abv,volume_ml,container,price,aroma,flavor,aftertaste,price_scor
 日南海,芋焼酎,hinami_20_1800.jpg,20,1800,,2345,2,2,3,3,https://shochu-dojo.jp/?pid=160011479
 日南海,芋焼酎,hinami_25_720.jpg,25,720,,1652,2,2,3,2,https://shochu-dojo.jp/?pid=159978183
 日南海,芋焼酎,hinami_25_1800.jpg,25,1800,,2633,2,2,3,3,https://shochu-dojo.jp/?pid=159978466
-蔵の文太 白麹,芋焼酎,kuranobunta_shiro_720.jpg,25,720,瓶,1320,4,3,4,2,取り扱いなし
-蔵の文太 白麹,芋焼酎,kuranobunta_shiro_1800.jpg,25,1800,瓶,2046,4,3,4,3,取り扱いなし
-蔵の文太 黒麹,芋焼酎,kuranobunta_kuro_720.jpg,25,720,瓶,1320,2,3,2,2,取り扱いなし
-蔵の文太 黒麹,芋焼酎,kuranobunta_kuro_1800.jpg,25,1800,瓶,2046,2,3,2,3,取り扱いなし
-花立の里,芋焼酎,hanadatenosatoi_720.jpg,25,720,,1540,,,,2,商品ページがない
-花立の里,芋焼酎,hanadatenosatoi_1800.jpg,25,1800,,2639,,,,3,商品ページがない
-日南発,芋焼酎,hinata_900.jpg,25,900,,1446,,,,2,商品ページがない
-日南発,芋焼酎,hinata_1800.jpg,25,1800,,2556,,,,3,商品ページがない
+日南発,芋焼酎,hinata_900.jpg,25,900,,1446,4,4,3,2,https://shochu-dojo.jp/?pid=158061929
+日南発,芋焼酎,hinata_1800.jpg,25,1800,,2556,4,4,3,3,https://shochu-dojo.jp/?pid=158061931
 日南発 カープボトル,芋焼酎,hinata_carpbottle_720.jpg,25,720,,1680,4,3,3,2,https://shochu-dojo.jp/?pid=158061932
 芋の喜,芋焼酎,imonoyorokobi_1800.jpg,25,1800,紙パック,2194,3,3,3,3,https://shochu-dojo.jp/?pid=158061958
 テーナー芋,芋焼酎,imo_cubitainer_18000.jpg,25,18000,,14850,3,3,3,5,https://shochu-dojo.jp/?pid=158061974
@@ -97,9 +91,6 @@ name,type,image,abv,volume_ml,container,price,aroma,flavor,aftertaste,price_scor
 長期甕貯蔵 無月 華,麦焼酎,mugetsu-hana_720.jpg,40,720,瓶,3300,3,2,2,4,https://shochu-dojo.jp/?pid=158061975
 長期甕貯蔵 無月 極,その他,mugetsu_kiwami_720.jpg,40,720,瓶,3300,2,1,1,4,https://shochu-dojo.jp/?pid=158061982
 テーナー麦,麦焼酎,junmugi_cubitainer_18000.jpg,25,18000,,13750,3,3,3,5,https://shochu-dojo.jp/?pid=158061980
-しあわせ いちごリキュール,リキュール,ichigo_500.jpg,14,500,,1970,,,,2,商品ページがない
 さわやか健美梅酒,リキュール,sawayaka_umeshu_300.jpg,5,300,瓶,572,5,5,5,1,https://shochu-dojo.jp/?pid=158061988
 体にうれしい梅酒,リキュール,karadaniureshii_umeshu_720.jpg,14,720,瓶,1485,2,2,3,2,https://shochu-dojo.jp/?pid=158061987
-さわやか健美梅酒 -GOLD-,リキュール,umeshu_gold_500.jpg,14,500,,1410,,,,2,商品ページがない
-さわやか健美梅酒-PREMIUM-,リキュール,umeshu_premium_500.jpg,14,500,,1254,,,,2,商品ページがない
 クラフトジン 銀鼠 -GINnez-,その他,GINnez44_200.jpg,44,200,瓶,990,5,3,3,1,https://shochu-dojo.jp/?pid=158061989
