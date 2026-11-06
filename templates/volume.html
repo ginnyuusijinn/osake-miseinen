@@ -6,11 +6,11 @@
   <title>容量の選択 - おすすめ焼酎診断</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
-<body style="background-color: #FFFAF0; font-family: 'Helvetica Neue', Arial, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, sans-serif; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; padding: 20px; box-sizing: border-box;">
+<body style="background-color: #FAF7F2; font-family: 'Helvetica Neue', Arial, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, sans-serif; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; padding: 20px; box-sizing: border-box;">
 
-  <div style="background: #ffffff; padding: 40px 30px; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); width: 100%; max-width: 440px; text-align: center; box-sizing: border-box;">
+  <div style="background: #ffffff; padding: 40px 30px; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); width: 100%; max-width: 520px; text-align: center; box-sizing: border-box;">
     
-    <h2 style="font-size: 1.4rem; color: #333; margin-bottom: 25px; font-weight: bold; border: none; padding: 0;">ご希望の容量（サイズ）を選んでください</h2>
+    <h2 style="font-size: 1.35rem; color: #333; margin-bottom: 25px; font-weight: bold; border: none; padding: 0; white-space: nowrap;">ご希望の容量（サイズ）を選んでください</h2>
     
     <div style="display: flex; flex-direction: column; gap: 12px;">
       <a class="choice-btn" href="{{ url_for('taste', type=drink_type, volume='100') }}">100ml〜360ml（お試し・カップ）</a>
