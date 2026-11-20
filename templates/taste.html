@@ -190,6 +190,10 @@
                             <span class="detail-value">${drink.volume_ml}ml</span>
                         </div>
                         <div class="detail-item">
+                            <span class="detail-label">100mlあたりの価格</span>
+                            <span class="detail-value">${drink.volume_ml ? Math.round((drink.price / drink.volume_ml) * 100).toLocaleString() : '-'}円</span>
+                        </div>
+                        <div class="detail-item">
                             <span class="detail-label">アルコール度数</span>
                             <span class="detail-value">${drink.abv}%</span>
                         </div>
